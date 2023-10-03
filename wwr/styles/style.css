@@ -1,0 +1,81 @@
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#hero-msg h1, #hero-msg h4{
+    text-align: center;
+}
+#hero-img{
+    width: 100%;
+}
+.button-box{
+    text-align: center;
+}
+
+main section{
+    text-align: center;
+}
+#background{
+    height: 725px;
+    background-color: #e6fab7;
+}
+body{
+    background-color: #e3e8ed;
+}
+header{
+    background-color: #489FB5;
+}
+nav a:hover{
+    color: #489FB5;
+    background-color: #114B56;
+}
+nav a{
+    text-align: center;
+    color: #EDE7E3;
+    text-decoration: none;
+}
+.home-title{
+    color: #114B56;
+}
+h4{
+    color: #114B56;
+}
+.book, .join{
+    color: #EDE7E3;
+}
+.book:hover, .join:hover{
+    color: #114B56;
+}
+.msg h2{
+    color: #114B56;
+}
+.msg p{
+    color: #114B56;
+}
+footer{
+    background-color: #489FB5;
+}
+footer a{
+    color: #EDE7E3;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color: #114B56;
+    color: #489FB5;
+}
+.icon {
+    width: 80px;
+}
+footer p{
+    font-size: 1.2em;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+.msg{
+    background-color: #489FB5;
+}
+#card-img{
+    width: 100%;
+}
