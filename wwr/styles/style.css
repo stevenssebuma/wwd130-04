@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=c&family=Rock+Salt&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -19,9 +21,15 @@ main section{
 #background{
     height: 725px;
     background-color: #e6fab7;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 body{
     background-color: #e3e8ed;
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: #489FB5;
@@ -34,27 +42,39 @@ nav a{
     text-align: center;
     color: #EDE7E3;
     text-decoration: none;
+    padding: 35px;
 }
 .home-title{
     color: #114B56;
+    font-family: 'Rock Salt';
+    font-size: 2em;
 }
 h4{
     color: #114B56;
 }
 .book, .join{
+    background-color:#114B56;
     color: #EDE7E3;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
-    color: #114B56;
+    color: #cbfd33;
 }
 .msg h2{
     color: #114B56;
 }
 .msg p{
     color: #114B56;
+    padding-bottom: 15px;
 }
 footer{
     background-color: #489FB5;
+    padding: 25px 50px;
+    margin-top: 100px;
 }
 footer a{
     color: #EDE7E3;
@@ -66,6 +86,7 @@ footer a:hover{
 }
 .icon {
     width: 80px;
+    padding: 10px;
 }
 footer p{
     font-size: 1.2em;
@@ -75,7 +96,27 @@ footer p a:hover{
 }
 .msg{
     background-color: #489FB5;
+    line-height: 1.5em;
+    padding: 35px;
 }
-#card-img{
-    width: 100%;
+.card-img{
+    border: 10px solid#114B56;    
+}
+section .card-img{
+    margin: 50px 50px;
+}
+h2{
+    margin: 0;
+}
+#logo_link{
+    padding-top: 5px;    
+}
+footer .social img{
+    padding-top: 15px;
+}
+main section img{
+    box-sizing: border-box;
+}
+.mountains{
+    margin-bottom: 50px;
 }
