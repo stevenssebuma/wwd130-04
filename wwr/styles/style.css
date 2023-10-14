@@ -84,13 +84,16 @@ footer a:hover{
     background-color: #114B56;
     color: #489FB5;
 }
+
 .icon {
     width: 80px;
     padding: 10px;
 }
+
 .logo{
     width: 80px;
 }
+
 footer p{
     font-size: 1.2em;
 }
