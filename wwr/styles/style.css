@@ -52,7 +52,7 @@ main section{
     margin-bottom: 50px;
 }
 body{
-    background-color: #e3e8ed;
+    background-color: #e2ecf7;
     font-family: 'Playfair Display';
     font-size: 22px;
     margin: 0;
@@ -144,6 +144,7 @@ footer p a:hover{
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #114B56;
+    
 }
 .card-img{
     border: 10px solid#114B56; 
@@ -167,7 +168,7 @@ h2{
 
 #logo_link{
     padding-top: 5px;
-    justify-self: center;  
+    justify-self: center;      
     align-self: center;  
 }
 
