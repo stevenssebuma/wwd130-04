@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivers</title>
+</head>
+<body>
+    <div id="content">
+        <header class="navbar">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Page 2</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <div id="rivers">
+            <div id="rivers-box">
+                <img class="rivers-img" src="images/rivers-banner4.jpg" alt="People enjoying white water rafting">
+                <img class="rivers-img" src="images/river-banner3.jpg" alt="People enjoying white water rafting">
+                <img class="rivers-img" src="images/rivers-banner5.jpg" alt="People enjoying white water rafting">
+            </div>
+            <section id="rivers-msg">
+                <h1 class="rivers-title">Wholesome Rafting Rivers in the Wild</h1>
+            </section>
+
+        </div>
+        <main class="home-grid">
+
+            <img class="icon2" src="images/chat-bubble.png" alt="Chat now" onclick="openForm()">
+
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                
+                
+                <label id="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+            <div class="text-space">
+                <img class="salmon" src="images/salmon-boat-beach.jpg" alt="salmo river">
+                <h2 class="salmo-title">Main Fork of the Salmon River, Idaho</h2>
+                <p>Nestled deep in the Frank Church Wilderness of No Return winds the Salmon river. The Salmon was given the nickname long ago as the River of No Return by the people living near it because of the number of folks that came to visit and fell so in love with the rugged beauty of the river that they never left.</p>
+
+                <p>Herds of elk and deer graze on the hillsides around the river and bear and bighorn sheep are also commonly sighted. The river corridor is also lined with awe inspiring ponderosa pine which tower over the sandy beaches in the campsites and provide shelter from sun or rain when needed.</p>
+                    
+                <p>Let's not forget the rapids! They range from class I-IV. The Salmon is one of the longest undammed rivers in the United States. As a free flowing river the water is higher, faster, and colder in the early summer and lower, slower, and warmer in the late summer. There are good rapids all summer...but families with children who like to swim tend to appreciate the late summer's slower, warmer water more.</p>
+            </div>
+            <div class="offer">
+            <h3>We offer more, Read slides</h3>
+            </div>  
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                  <img src="images/rapids2.jpg" alt="rapids-iamge" style="width: 100%;">
+                  <p>Winding through canyons in central Utah, in some of the most desolate land anywhere, the Green river flows
+                    towards the mighty Colorado river and the sea. High grey stone cliffs, beautiful desert scenery, and great rapids have made this run famous.</p>
+                  <p class="source">- Desolation and Gray Canyon, Utah</p>
+                </div>
+                
+                <div class="mySlides">
+                  <img src="images/grand-canyon-rafting-2.jpg" alt="grand canyons" style="width: 100%;">
+                  <p>This is the grand daddy of all canyons and the grand daddy of all river trips. You will never forget your visit to the Grand Canyon.
+                    Grand Canyon river rafting combines world-class whitewater with breathtaking scenery to make one truly unforgettable river experience.
+                  </p>
+                  <p class="source">- Grand Canyon, Arizona</p>
+                </div>
+                
+                <div class="mySlides">
+                  <img src="images/main-fork-salmon.jpg" alt="main fork salmon" style="width: 100%;">
+                  <p>The Wild segment of the Salmon River is located in Central Idaho and originates at Corn Creek Campground, 46 miles west of North Fork, Idaho.
+                    It flows 79 miles west to Long Tom Bar, which is 28 miles east of Riggins, Idaho.</p>
+                  <p class="source">- Main Fork of the Salmon River, Idaho</p>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <div class="dot-container">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            
+            <script>
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                var myIndex = 0;
+                carousel();
+                            
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("rivers-img");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+            </script>
+        </main>  
+        <footer>
+            <p>Dry Oar &copy; 2023 - Steven Ssebuma</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">                   
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="images/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="images/instagram.png" alt="instagram icon">
+                    </a>
+                    </div>   
+        </footer>                    
+    </div>   
+</body>
+</html>
