@@ -196,7 +196,8 @@ main section img{
 
 .camping-card{
     grid-column: 5/7;
-    grid-row: 2/3;
+    grid-row:
+     2/3;
 }
 
 .rapids-card{
