@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/cyber-touch.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Touch| Websites</title>
+   
+</head>
+<body>
+    <div id="content">
+        <header>
+        <div class="vertical-menu">
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/cyber-touch-logo.jpeg" alt="Cyber Touch Logo" width="200px" height="200px">
+        </a>
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="website.html">Websites</a>
+            <a href="tech.html">Tech</a>
+            
+        </div>
+    </div>
+           </header>
+        <div id="home">
+
+           <video class="video" style="pointer-events: none;" width="800px" height="780px" controls autoplay loop>
+            <source src="images/video2.webm" type="video/webm">
+            <source src="images/video2.webm" type="video/ogg">
+            
+           </video>
+        
+            <section id="home-msg">
+                <h1 class="home-title">Websites hub</h1>
+            </section>
+        </div>
+
+            <main id="home-grid">
+                <img class="icon2" src="images/chat-bubble.png" alt="Chat now" onclick="openForm()">
+                <div class="chat-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                    
+                    
+                    <label id="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+                    
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  </form>
+                </div>
+                
+                <div class="text-space">
+                </div>
+                <section class="computer-card">
+                    <img class="card-img" src="images/page2-pic2.jpg" alt="typing computer" width="500px" height="400px">
+                    <img class="card-img" src="images/pexels-xxss-is-back-777001.jpg" alt="typing computer" width="500px" height="400px">
+                    <img class="card-img" src="images/pexels-jessica-lewis-583848.jpg" alt="typing computer" width="500px" height="400px">
+                    <div class="content">
+                        <div class="text">This platform offers a cyber touch to empower businesses and individuals by providing them with the necessary tools,
+                            resources, and expertise to establish and enhance their online access and stability.
+                            </div>
+                   </div>
+                </section>
+                <section class="screen-card">
+                    <img class="card-img" src="images/pexels-xxss-is-back-777001.jpg" alt="rafting boat" width="500px" height="400px">
+                    <img class="card-img" src="images/pexels-serpstat-572056.jpg" alt="rafting boat" width="500px" height="400px">
+                    <img class="card-img" src="images/pexels-jessica-lewis-583848.jpg" alt="rafting boat" width="500px" height="400px">
+                    <div class="content">                   
+                        <div class="text">This platform offers a cyber touch to empower businesses and individuals by providing them with the necessary tools,
+                        resources, and expertise to establish and enhance their online access and stability.
+                        </div>
+                    </div>
+  
+                </section>
+                <div class="text-space">
+                    <h2 class="computers-title">CyBeR ToUcH Websites Hub </h2>
+                    <p>
+                        When it comes to building websites, we prioritize a user-centered approach. We take the time to understand your target audience,
+                        their preferences, and their browsing habits. This helps us create intuitive and engaging user experiences that keep visitors coming back.
+                        Our design process is a collaborative one. We work closely as a team and with our clients to gather input, feedback, and ideas throughout the project.
+                        By involving you in the design process, we ensure that the final product is a true reflection of your vision and goals.</p>
+                        <p>Accessibility and responsiveness are at the forefront of our design philosophy. We believe that websites should be accessible to all users,
+                        regardless of their abilities or devices. Our designs are optimized for different screen sizes, ensuring that your website looks stunning and functions 
+                        flawlessly on desktops, laptops, tablets, and smartphones.</p>
+                     <p>Security is another vital aspect that we prioritize. We implement robust security measures to protect your website from potential threats, 
+                        ensuring the safety of your data and your visitors' information.        
+                        At our website, we believe in building long-lasting relationships with our clients. We provide ongoing support and maintenance services to ensure 
+                        that your website is always up-to-date, secure, and functioning optimally. We are here to assist you even after the project is completed.
+                
+                    </p>
+                </div>
+                </main>
+                <script>
+                     function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                    var myIndex = 0;
+                carousel();
+                            
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("card-img");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+                
+                </script>
+            <footer>
+            <div class="contact">
+                <p>Contact +256 709904397 for more information</p>
+          
+               
+                <p>Cyber Touch Web & Tech Solutions &copy; 2023 - Steven Ssebuma</p>
+                <p><a href="site-plan-rafting.html">Websites</a></p>
+                <p><a href="contactus.html">Tech</a></p>  </div>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/steven-ssebuma-b58471268/" target="_blank">
+                        <img src="images/LI-In-Bug.png" alt="linkedin icon" width="70px" height="65px">
+                    </a>
+                    <a href="https://facebook.com/Steven/Ssebuma" target="_blank">
+                        <img src="images/facebook.png" alt="fb icon">                   
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <img src="images/twitter.png" alt="twitter icon">
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="images/instagram.png" alt="instagram icon">
+                        </a>
+                       
+                        </div>   
+            </footer>
+        </div>     
+</body>
+</html>
