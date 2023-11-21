@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Nosifer&family=Roboto&display=swap');
 
+.logo{
+  width: 200px;
+  height: 200px;
+}
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -111,6 +115,10 @@ animation: textclip 5s linear infinite;
 display: inline-block;
 font-size: 50px;
 }
+.linkedin{
+  width: 70px; 
+  height: 65px;
+}
 
 @keyframes textclip {
     to {
@@ -133,6 +141,8 @@ grid-column: 2/10;
 margin-top: 50px;
 }
 .computers{
+    width: 600px; 
+    height: 400px;
     float: right;
     margin: 20px; 
     border: #0B4450 solid;
@@ -140,11 +150,12 @@ margin-top: 50px;
 .computers-title{
     font-family: "Nosifer";
     color: #0B4450;
+    font-size: 35px;
 }
 
 footer{
     background-color: #0B4450;
-    padding: 25px 50px;
+    padding: 50px;
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
@@ -244,14 +255,15 @@ footer p a:hover{
     -webkit-transform: rotate3d();
   }
 .text{
-   font-size: 30px;
+   font-size: 40px;
    text-align: center;
    font-family: "Lora";
-   color: #0B4450;
+   color: #073038;
 }
 .contact{
     padding-top: 100px;
     align-items: flex-start;
+    margin-top: 50px;
 }
 .icons{
   float: right;
@@ -338,11 +350,25 @@ footer p a:hover{
       height: auto;
      
     } 
+.web-text{
+  color: #636e50;
+  font-size: 25px;
+}
+.card-img{
+  width: 500px;
+  height: 400px;
+}
   
 @media screen and (max-width: 900px) {
     .vertical-menu{
-        position: absolute;
-        width: 100%;
+        display: block;
+
+    }
+    .logo{
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      float: right;
     }
     #menu-links{
         position: absolute;
@@ -351,7 +377,7 @@ footer p a:hover{
     }
     .home-img{
         display: block;
-        z-index: 1;
+        position: absolute;
     }
     #home, #home-grid {
         display: block;
@@ -372,6 +398,7 @@ footer p a:hover{
     #home-msg {
         margin-top: 0;
         display: block;
+        z-index: -1;
     }
   
     .home-title {
