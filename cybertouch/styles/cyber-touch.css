@@ -248,12 +248,12 @@ footer p a:hover{
 .computer-card .content:hover .text {
   opacity: 1;
   transform: translate3d(10px, 0, 0);
-  -webkit-transform: rotate3d(0, 0, 1, 1deg);
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
 }
 .screen-card .content:hover .text {
    opacity: 1;
    transform: translate3d(10px, 0, 0);
-   -webkit-transform: rotate3d(0, 0, 1, 1deg);
+   -webkit-transform: rotate3d(0, 0, 1, 0deg);
  }
 .text{
    font-size: 40px;
