@@ -247,13 +247,13 @@ footer p a:hover{
  
 .computer-card .content:hover .text {
   opacity: 1;
-  transform: translate3d();
-  -webkit-transform: rotate3d();
+  transform: translate3d(10px, 0, 0);
+  -webkit-transform: rotate3d(0, 0, 1, 1deg);
 }
 .screen-card .content:hover .text {
    opacity: 1;
-   transform: translate3d();
-   -webkit-transform: rotate3d();
+   transform: translate3d(10px, 0, 0);
+   -webkit-transform: rotate3d(0, 0, 1, 1deg);
  }
 .text{
    font-size: 40px;
@@ -410,7 +410,7 @@ footer p a:hover{
     }
     .computer-card{ 
         margin: 50px auto;
-        width: 30px auto;
+        width: 30px;
     }
     .screen-card{
         margin: 50px auto;
